@@ -1,17 +1,37 @@
-import React, { useState } from 'react';
-import Header from './Header';
-// Componentes: Bloco isolado de codigo HTML, CSS e JS, o qual não interfere no restante da aplicação
-// Propriedade: Informações que o componente pai passa para os filhos
-// Estado: Informações mantidas pelos componentes (Lembrar: Imutabilidade)
+import React from 'react';
+import './global.css';
+import './app.css';
+
 function App() {
-	const [ counter, setCounter ] = useState(0);
-	function incrementCounter() {
-		setCounter(counter + 1);
-	}
 	return (
-		<div>
-			<h1>Contador: {counter}</h1>
-			<button onClick={incrementCounter}>Incrementar</button>
+		<div id={'app'}>
+			<aside>
+				<strong>Cadastrar</strong>
+				<form>
+					<div className={'input-block'}>
+						<label htmlFor={'github_username'}>Usuário do Github</label>
+						<input className={'github_username'} id={'github_username'} required />
+					</div>
+					<div className={'input-block'}>
+						<label htmlFor={'techs'}>Tecnologia</label>
+						<input className={'techs'} id={'techs'} required />
+					</div>
+
+					<div className={'input-group'}>
+						<div className={'input-block'}>
+							<label htmlFor={'latitude'}>Latitude</label>
+							<input className={'latitude'} id={'latitude'} required />
+						</div>
+
+						<div className={'input-block'}>
+							<label htmlFor={'longitude'}>Longitude</label>
+							<input className={'longitude'} id={'longitude'} required />
+						</div>
+					</div>
+					<button type={'submit'}>Salvar</button>
+				</form>
+			</aside>
+			<main />
 		</div>
 	);
 }
