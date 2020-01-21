@@ -1,6 +1,8 @@
 import React from 'react';
 import './global.css';
 import './app.css';
+import './sidebar.css';
+import './main.css';
 
 function App() {
 	return (
@@ -31,7 +33,66 @@ function App() {
 					<button type={'submit'}>Salvar</button>
 				</form>
 			</aside>
-			<main />
+			<main>
+				<ul>
+					<li className={'dev-item'}>
+						<header>
+							<img
+								src={'https://avatars1.githubusercontent.com/u/26713741?s=460&v=4'}
+								alt={'Wesley Vicente'}
+							/>
+							<div className={'user-info'}>
+								<strong>Wesley Vicente</strong>
+								<span>ReactJS, Java, AdonisJS</span>
+							</div>
+						</header>
+						<p>Fazendo um dente no universo.</p>
+						<a href={'https://github.com/wesleyvicen'}>Acessar perfil no Github</a>
+					</li>
+					<li className={'dev-item'}>
+						<header>
+							<img
+								src={'https://avatars1.githubusercontent.com/u/26713741?s=460&v=4'}
+								alt={'Wesley Vicente'}
+							/>
+							<div className={'user-info'}>
+								<strong>Wesley Vicente</strong>
+								<span>ReactJS, Java, AdonisJS</span>
+							</div>
+						</header>
+						<p>Fazendo um dente no universo.</p>
+						<a href={'https://github.com/wesleyvicen'}>Acessar perfil no Github</a>
+					</li>
+					<li className={'dev-item'}>
+						<header>
+							<img
+								src={'https://avatars1.githubusercontent.com/u/26713741?s=460&v=4'}
+								alt={'Wesley Vicente'}
+							/>
+							<div className={'user-info'}>
+								<strong>Wesley Vicente</strong>
+								<span>ReactJS, Java, AdonisJS</span>
+							</div>
+						</header>
+						<p>Fazendo um dente no universo.</p>
+						<a href={'https://github.com/wesleyvicen'}>Acessar perfil no Github</a>
+					</li>
+					<li className={'dev-item'}>
+						<header>
+							<img
+								src={'https://avatars1.githubusercontent.com/u/26713741?s=460&v=4'}
+								alt={'Wesley Vicente'}
+							/>
+							<div className={'user-info'}>
+								<strong>Wesley Vicente</strong>
+								<span>ReactJS, Java, AdonisJS</span>
+							</div>
+						</header>
+						<p>Fazendo um dente no universo.</p>
+						<a href={'https://github.com/wesleyvicen'}>Acessar perfil no Github</a>
+					</li>
+				</ul>
+			</main>
 		</div>
 	);
 }
