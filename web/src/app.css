@@ -13,14 +13,13 @@
 	margin-left: 30px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 	#app {
 		flex-direction: column;
 	}
 
 	#app main {
 		margin: 30px 0 0 0;
-		width: 100%;
 	}
 
 	#app aside {
